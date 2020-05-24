@@ -10,9 +10,7 @@ import Main from './main-page/main-page.component';
 
 ReactDOM.render((<Router>
       <Route exact path = "/" component = {App}></Route>
-         <Route path = "/login" component = {Login} />
-         <Route path = "/main" component = {Main} />
-         <Route path = "/register" component = {Register} />
+      <Route path = "/login" component = {Login} />
       
 </Router>), 
 document.getElementById('root'));

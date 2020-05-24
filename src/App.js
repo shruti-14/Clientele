@@ -1,15 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Link} from 'react-router-dom';
+import WhoAreYou from './components/who-are-you/who-are-you';
 
 const App = () => (
-  <div>
-  <ul>
-  <li><Link to="/main">Main</Link></li>
-  </ul>
-</div>
+  <WhoAreYou className="comp"/>
 );
-
 
 export default App;
