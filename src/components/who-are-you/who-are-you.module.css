@@ -1,4 +1,5 @@
 * {
+  --button-color: rgba(231, 62, 90);
   margin: 0%;
   padding: 0%;
 }
@@ -11,7 +12,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   animation: slide 10s infinite;
 }
@@ -76,50 +81,64 @@
 }
 @keyframes slide {
   0%{
-    background-image: url('https://img.freepik.com/free-photo/shocked-two-women-friends-holding-shopping-bags-using-mobile-phone_171337-5718.jpg?size=626&ext=jpg');
+    background-image: url('../../assets/landing-page-carousel/fashion.jpg');
   }
   20%{
-    background-image: url('https://img.freepik.com/free-photo/shocked-two-women-friends-holding-shopping-bags-using-mobile-phone_171337-5718.jpg?size=626&ext=jpg');
+    background-image: url('../../assets/landing-page-carousel/fashion.jpg');
   }
   20.01%{
-    background-image: url('https://cdn.mos.cms.futurecdn.net/eY8hTfuVLuQbUT75HSaQSc.jpg');
+    background-image: url('../../assets/landing-page-carousel/technology.jpg');
   }
   40%{
-    background-image: url('https://cdn.mos.cms.futurecdn.net/eY8hTfuVLuQbUT75HSaQSc.jpg');
+    background-image: url('../../assets/landing-page-carousel/technology.jpg');
   }
   40.01%{
-    background-image: url('https://69445235844b78bbd4c8-40765e7850b487e7db6d0b1ca2adcee0.ssl.cf3.rackcdn.com/_assets/images/cache/shop/hotspotssmaller/harlequin-momentum-3-and-four-8.jpg');
+    background-image: url('../../assets/landing-page-carousel/furniture.jpg');
   }
   60%{
-    background-image: url('https://69445235844b78bbd4c8-40765e7850b487e7db6d0b1ca2adcee0.ssl.cf3.rackcdn.com/_assets/images/cache/shop/hotspotssmaller/harlequin-momentum-3-and-four-8.jpg');
+    background-image: url('../../assets/landing-page-carousel/furniture.jpg');
   }
   60.01%{
-    background-image: url('https://www.hihonor.com/content/dam/honor/global/products/accessories/honor-watch/img/section2_content2_pc-new.jpg');
+    background-image: url('../../assets/landing-page-carousel/watch.jpg');
   }
   80%{
-    background-image: url('https://www.hihonor.com/content/dam/honor/global/products/accessories/honor-watch/img/section2_content2_pc-new.jpg');
+    background-image: url('../../assets/landing-page-carousel//watch.jpg');
   }
   80.01%{
-    background-image: url('https://c.static-nike.com/a/images/f_auto/dpr_1.0/w_1024,c_limit/c13c2695-e894-4ab1-a11e-3dc2308fe56c/nike-training-club-app-home-workouts-more.jpg');
+    background-image: url('../../assets/landing-page-carousel/sports.jpg');
   }
   100%{
-    background-image: url('https://c.static-nike.com/a/images/f_auto/dpr_1.0/w_1024,c_limit/c13c2695-e894-4ab1-a11e-3dc2308fe56c/nike-training-club-app-home-workouts-more.jpg');
+    background-image: url('../../assets/landing-page-carousel/sports.jpg');
   }
 }
 @keyframes rotateWordsSecond {
-  0% { opacity: 1; animation-timing-function: ease-in; height: 0px; }
-  10% { opacity: 0.8; height: 0px; }
-20% { opacity: 1; height: 28%; }
-  27% { opacity: 0; height: 28%; }
-  100% { opacity: 0; }
+  0% { 
+    opacity: 1;
+    animation-timing-function: ease-in; 
+    height: 0px; 
+  }
+  10% { 
+    opacity: 0.8; 
+    height: 0px; 
+  }
+  20% { 
+    opacity: 1; 
+    height: 28%; 
+  }
+  27% { 
+    opacity: 0; 
+    height: 28%; 
+  }
+  100% { 
+    opacity: 0; 
+  }
 }
-
 .topnav {
   overflow: hidden;
   top: 0%;
   width: 100%;
 }
-.topnav a {
+.topnav .actionButton {
   float: right;
   color: #f2f2f2;
   margin: 10px 16px 0px 16px;
@@ -135,9 +154,61 @@
   border: 1px solid lightgray;
   cursor: pointer;
 }
-.topnav a:hover {
+.topnav .actionButton:hover {
   opacity: 0.8;
-  background-color: rgba(231, 62, 90);
+  background-color: var(--button-color);
   color: white;
-  border: 1px solid rgba(231, 62, 90);
+  border: 1px solid var(--button-color);
+}
+
+@media only screen and (max-width: 536px) {
+  .slider {
+    align-items: flex-start;
+  }
+  .main h1 {
+    font-size: 3.5em;
+  }
+  .sloganContainer {
+    font-size: 1.2em;
+    margin-left: -80px;
+  }
+  .actionButton {
+    font-size: 1.5em;
+    opacity: 0.8;
+    background-color: var(--button-color);
+    color: white;
+    border: 1px solid var(--button-color);
+  }
+  @keyframes slide {
+    0%{
+      background-image: url('https://image.freepik.com/free-photo/excited-young-woman-holding-shopping-bags_74952-253.jpg');
+    }
+    20%{
+      background-image: url('https://image.freepik.com/free-photo/excited-young-woman-holding-shopping-bags_74952-253.jpg');
+    }
+    20.01%{
+      background-image: url('https://cdn.bmwblog.com/wp-content/uploads/2015/06/bose-headphones-cars-05.jpg');
+    }
+    40%{
+      background-image: url('https://cdn.bmwblog.com/wp-content/uploads/2015/06/bose-headphones-cars-05.jpg');
+    }
+    40.01%{
+      background-image: url('https://www.antidiler.org/upload/2019/08/14/painting-ideas-with-tips-simple-home-interiors-decorating-ideas-home-painting-tips-ideas-l-1c13ef8bd0f07585.jpg');
+    }
+    60%{
+      background-image: url('https://www.antidiler.org/upload/2019/08/14/painting-ideas-with-tips-simple-home-interiors-decorating-ideas-home-painting-tips-ideas-l-1c13ef8bd0f07585.jpg');
+    }
+    60.01%{
+      background-image: url('https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    }
+    80%{
+      background-image: url('https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    }
+    80.01%{
+      background-image: url('https://hasselbladbron.com/blog/wp-content/uploads/2017/03/170331_michelfelder_blog_006-1030x654.jpg');
+    }
+    100% {
+      background-image: url('https://hasselbladbron.com/blog/wp-content/uploads/2017/03/170331_michelfelder_blog_006-1030x654.jpg');
+    }
+  }
 }
