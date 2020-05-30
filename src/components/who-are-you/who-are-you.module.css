@@ -2,6 +2,7 @@
   --button-color: rgba(231, 62, 90);
   margin: 0%;
   padding: 0%;
+  font-size: 2vw;
 }
 
 .load {
@@ -36,13 +37,13 @@
   color: white;
 }
 .main h1 {
-  font-size: 6.25em;
+  font-size: 2.5em;
   margin-bottom: 20px;
   background-color: rgba(0,0,0,0.5);
   padding: 0px 16px;
 }
 .sloganContainer  {
-  font-size: 2.5em;
+  font-size: 2em;
   display: inline-flex;
   margin-left: -100px;
 }
@@ -141,14 +142,14 @@
 .topnav .actionButton {
   float: right;
   color: #f2f2f2;
-  margin: 10px 16px 0px 16px;
+  margin: 10px 16px 0px 0px;
 }
 .actionButton {
   padding: 8px 24px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 2em;
+  font-size: 1em;
   margin: 4px 2px;
   background-color: transparent; 
   border: 1px solid lightgray;
@@ -161,19 +162,24 @@
   border: 1px solid var(--button-color);
 }
 
-@media only screen and (max-width: 536px) {
+@media only screen and (max-width: 1024px) {
+  * {
+    font-size: 5vw;
+  }
+  .moreWord {
+    margin-right: 16px;
+  }
+  .sloganWords{
+    padding-left: 0px;
+    padding-right: 2.5px;
+  }
   .slider {
     align-items: flex-start;
   }
-  .main h1 {
-    font-size: 3.5em;
-  }
   .sloganContainer {
-    font-size: 1.2em;
     margin-left: -80px;
   }
   .actionButton {
-    font-size: 1.5em;
     opacity: 0.8;
     background-color: var(--button-color);
     color: white;
@@ -187,10 +193,10 @@
       background-image: url('https://image.freepik.com/free-photo/excited-young-woman-holding-shopping-bags_74952-253.jpg');
     }
     20.01%{
-      background-image: url('https://cdn.bmwblog.com/wp-content/uploads/2015/06/bose-headphones-cars-05.jpg');
+      background-image: url('https://c0.wallpaperflare.com/preview/539/472/947/gray-and-black-bose-headset-and-black-iphone-x.jpg');
     }
     40%{
-      background-image: url('https://cdn.bmwblog.com/wp-content/uploads/2015/06/bose-headphones-cars-05.jpg');
+      background-image: url('https://c0.wallpaperflare.com/preview/539/472/947/gray-and-black-bose-headset-and-black-iphone-x.jpg');
     }
     40.01%{
       background-image: url('https://www.antidiler.org/upload/2019/08/14/painting-ideas-with-tips-simple-home-interiors-decorating-ideas-home-painting-tips-ideas-l-1c13ef8bd0f07585.jpg');
