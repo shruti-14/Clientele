@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  animation: slide 10s infinite;
+  animation: slide 15s infinite;
 }
 
 .content {
@@ -187,34 +187,34 @@
   }
   @keyframes slide {
     0%{
-      background-image: url('https://image.freepik.com/free-photo/excited-young-woman-holding-shopping-bags_74952-253.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/fashion.jpg');
     }
     20%{
-      background-image: url('https://image.freepik.com/free-photo/excited-young-woman-holding-shopping-bags_74952-253.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/fashion.jpg');
     }
     20.01%{
-      background-image: url('https://c0.wallpaperflare.com/preview/539/472/947/gray-and-black-bose-headset-and-black-iphone-x.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/technology.jpg');
     }
     40%{
-      background-image: url('https://c0.wallpaperflare.com/preview/539/472/947/gray-and-black-bose-headset-and-black-iphone-x.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/technology.jpg');
     }
     40.01%{
-      background-image: url('https://www.antidiler.org/upload/2019/08/14/painting-ideas-with-tips-simple-home-interiors-decorating-ideas-home-painting-tips-ideas-l-1c13ef8bd0f07585.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/furniture.jpg');
     }
     60%{
-      background-image: url('https://www.antidiler.org/upload/2019/08/14/painting-ideas-with-tips-simple-home-interiors-decorating-ideas-home-painting-tips-ideas-l-1c13ef8bd0f07585.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/furniture.jpg');
     }
     60.01%{
-      background-image: url('https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+      background-image: url('../../assets/landing-page-carousel/small-screen/watch.jpeg');
     }
     80%{
-      background-image: url('https://images.pexels.com/photos/2155319/pexels-photo-2155319.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+      background-image: url('../../assets/landing-page-carousel/small-screen/watch.jpeg');
     }
     80.01%{
-      background-image: url('https://hasselbladbron.com/blog/wp-content/uploads/2017/03/170331_michelfelder_blog_006-1030x654.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/sports.jpg');
     }
     100% {
-      background-image: url('https://hasselbladbron.com/blog/wp-content/uploads/2017/03/170331_michelfelder_blog_006-1030x654.jpg');
+      background-image: url('../../assets/landing-page-carousel/small-screen/sports.jpg');
     }
   }
 }

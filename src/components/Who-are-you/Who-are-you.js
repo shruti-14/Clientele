@@ -1,6 +1,6 @@
 import React from 'react';
-import classes from './who-are-you.module.css';
-import {Link} from 'react-router-dom';
+import classes from './Who-are-you.module.css';
+import { Link } from 'react-router-dom';
 
 
 const whoAreYou = (props) => (
@@ -9,8 +9,8 @@ const whoAreYou = (props) => (
         </div>
         <div className={classes.content}>
             <div className={classes.topnav}>
-                <Link to="/login" className={classes.actionButton}>Buy</Link>
-                <Link to="/login" className={classes.actionButton}>Sell</Link>
+                <Link to="/shop" className={classes.actionButton}>Buy</Link>
+                <Link to="/" className={classes.actionButton}>Sell</Link>
             </div>
             <div className={classes.main}>
 
