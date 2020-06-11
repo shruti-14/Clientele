@@ -1,0 +1,49 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: white;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+}
+.openSideDrawer {
+    transform: translateX(0);
+}
+.closeSideDrawer {
+    transform: translateX(-100%);
+}
+.Title {
+    color: rgba(231, 62, 90);
+    font-size: 5em;
+    padding-bottom: 8px;
+    
+}
+.TitleContainer {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #eaeaec;
+}
+.mainNavLinks {
+    padding-top: 16px;
+}
+.faTimesThin::before {
+    content: '\00d7';
+}
+.faTimesThin {
+    -webkit-text-stroke: 1px gray;
+    color: gray;
+    font-size: 3.8em;
+    padding-top: 6px;
+    cursor: pointer;
+}
+@media (min-width: 1025px) {
+    .SideDrawer {
+        display: none;
+    }
+}

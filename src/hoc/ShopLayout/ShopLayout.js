@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Collection from '../../components/Collection/Collection';
+import Layout from '../Layout/Layout';
 
-class ShopLayout extends Component {
+export default class ShopLayout extends Component {
     render() {
         return (
-            <div>Hi!</div>
-        );        
+            <Layout>
+                <Switch>
+                    <Route exact path="/shop" component={Collection} />
+                </Switch>
+            </Layout>
+        );
     }
 }
-
-export default ShopLayout;

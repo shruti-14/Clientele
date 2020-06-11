@@ -1,0 +1,32 @@
+
+.iconContainerMobile {
+    width: 30vw;
+    display: flex;
+    font-size: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+    color: darkgray;
+}
+.iconContainerDesktop {
+    display: none;
+}
+@media only screen and (min-width: 1025px) {
+    .iconContainerDesktop {
+        display: block;
+        width: 6vw;
+        display: flex;
+        font-size: 0.6em;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #cccccc;
+    }
+    .iconContainerDesktop i {
+        cursor: pointer;
+    }
+    .iconContainerDesktop i:hover {
+        color: #ee778b;
+    }   
+    .iconContainerMobile {
+        display: none;
+    }
+}
