@@ -10,23 +10,28 @@ const Toolbar = (props) => {
     const [popUpStyle, setPopUpStyle] = useState({
         position: 'relative',
         left: 0,
-        top: '80px'
+        top: 0,
+        display: 'none'
     });
     const getStyles = () => {
-        let style = {
-            position: 'relative',
-            left: 0,
-            top: '80px'
-        }
-        debugger;
+        let style = { ...popUpStyle };
         if (navLinksRef.current) {
-
             const elePosition = navLinksRef.current.getBoundingClientRect();
-            style['left'] = elePosition['left'] + 'px';
-            style['top'] = elePosition['top'] + 'px';
+            style['left'] = (elePosition['left'] + 50) + 'px';
+            style['top'] = (elePosition['top'] + 50) + 'px';
+            style['display'] = 'block'
         }
         console.log(style);
         setPopUpStyle(style)
+    }
+    const removeStyles = () => {
+        debugger;
+        setPopUpStyle({
+            position: 'relative',
+            left: 0,
+            top: 0,
+            display: 'none'
+        });
     }
     return (<Aux>
         <header className={classes.Toolbar}>
@@ -35,12 +40,11 @@ const Toolbar = (props) => {
                 <p className={classes.Title}>
                     Clientele
              </p>
-                <div className={classes.mainNavLinks} ref={navLinksRef}> <NavigationItems /> </div>
-
+                <div className={classes.mainNavLinks} ref={navLinksRef} > <NavigationItems mouseHovered={(key) => getStyles()} mouseLeft={() => removeStyles()} /> </div>
             </div>
             <IconNavigationItems />
         </header>
-        <div className={classes.CategoryContainer} style={popUpStyle} onClick={() => getStyles()}>
+        <div className={classes.CategoryContainer} style={popUpStyle}>
             abc
         </div>
     </Aux>);

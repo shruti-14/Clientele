@@ -13,6 +13,7 @@
     box-sizing: border-box;
     z-index: 90;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
 }
 .LeftOptionContainer {
     display: inline-flex;
