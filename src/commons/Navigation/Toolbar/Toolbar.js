@@ -4,6 +4,8 @@ import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 import IconNavigationItems from '../IconNavigationItems/IconNavigationItems';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import Aux from '../../../hoc/Aux/Aux';
+import Modal from '../../UI/Modal/Modal';
+import BackDrop from '../../UI/Backdrop/Backdrop';
 
 const Toolbar = (props) => {
     const navLinksRef = useRef(null);
@@ -11,7 +13,8 @@ const Toolbar = (props) => {
         position: 'relative',
         left: 0,
         top: 0,
-        display: 'none'
+        opacity: 'none',
+        showBackDrop: false
     });
     const getStyles = () => {
         let style = { ...popUpStyle };
@@ -19,7 +22,8 @@ const Toolbar = (props) => {
             const elePosition = navLinksRef.current.getBoundingClientRect();
             style['left'] = (elePosition['left'] + 50) + 'px';
             style['top'] = (elePosition['top'] + 50) + 'px';
-            style['display'] = 'block'
+            style['display'] = 'block';
+            style['showBackDrop'] = true;
         }
         console.log(style);
         setPopUpStyle(style)
@@ -30,10 +34,13 @@ const Toolbar = (props) => {
             position: 'relative',
             left: 0,
             top: 0,
-            display: 'none'
+            display: 'none',
+            showBackDrop: false
         });
+        console.log('removing--->', popUpStyle);
     }
     return (<Aux>
+        <BackDrop show={popUpStyle['showBackDrop']} clicked={() => console.log('Hi')} />
         <header className={classes.Toolbar}>
             <DrawerToggle clicked={props.drawerToggleClicked} />
             <div className={classes.LeftOptionContainer}>
@@ -45,7 +52,10 @@ const Toolbar = (props) => {
             <IconNavigationItems />
         </header>
         <div className={classes.CategoryContainer} style={popUpStyle}>
-            abc
+            {/* <Modal show={popUpStyle['display'] === 'block'} popUpStyle={popUpStyle}>
+                <h1>abc</h1>
+            </Modal> */}
+
         </div>
     </Aux>);
 };

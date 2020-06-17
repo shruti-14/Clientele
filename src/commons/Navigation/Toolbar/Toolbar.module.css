@@ -11,9 +11,10 @@
     align-items: center;
     padding:4px 16px;
     box-sizing: border-box;
-    z-index: 90;
+    z-index: 600;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
     overflow: hidden;
+    background-color: white;
 }
 .LeftOptionContainer {
     display: inline-flex;
@@ -26,11 +27,7 @@
     color: rgba(231, 62, 90);
     font-size: 5em;
 }
-/* .CategoryContainer {
-    position: relative;
-    top: 10%;
-    left: 10%;
-} */
+
 @media only screen and (min-width: 1025px) {
     .Title {
         font-size: 1.5em;
