@@ -4,8 +4,8 @@ import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 import IconNavigationItems from '../IconNavigationItems/IconNavigationItems';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import Aux from '../../../hoc/Aux/Aux';
-import Modal from '../../UI/Modal/Modal';
 import BackDrop from '../../UI/Backdrop/Backdrop';
+import SubCategoryModal from '../SubCategoryModal/SubCategoryModal';
 
 const Toolbar = (props) => {
     const navLinksRef = useRef(null);
@@ -13,23 +13,23 @@ const Toolbar = (props) => {
         position: 'relative',
         left: 0,
         top: 0,
-        opacity: 'none',
-        showBackDrop: false
+        display: 'none',
+        showBackDrop: false,
+        category: 'fashion'
     });
-    const getStyles = () => {
+    const getStyles = (key) => {
         let style = { ...popUpStyle };
         if (navLinksRef.current) {
             const elePosition = navLinksRef.current.getBoundingClientRect();
             style['left'] = (elePosition['left'] + 50) + 'px';
-            style['top'] = (elePosition['top'] + 50) + 'px';
+            style['top'] = (elePosition['top'] + 71.5) + 'px';
             style['display'] = 'block';
             style['showBackDrop'] = true;
+            style['category'] = key;
         }
-        console.log(style);
         setPopUpStyle(style)
     }
     const removeStyles = () => {
-        debugger;
         setPopUpStyle({
             position: 'relative',
             left: 0,
@@ -47,15 +47,12 @@ const Toolbar = (props) => {
                 <p className={classes.Title}>
                     Clientele
              </p>
-                <div className={classes.mainNavLinks} ref={navLinksRef} > <NavigationItems mouseHovered={(key) => getStyles()} mouseLeft={() => removeStyles()} /> </div>
+                <div className={classes.mainNavLinks} ref={navLinksRef} > <NavigationItems mouseHovered={(key) => getStyles(key)} mouseLeft={() => removeStyles()} /> </div>
             </div>
             <IconNavigationItems />
         </header>
         <div className={classes.CategoryContainer} style={popUpStyle}>
-            {/* <Modal show={popUpStyle['display'] === 'block'} popUpStyle={popUpStyle}>
-                <h1>abc</h1>
-            </Modal> */}
-
+            <SubCategoryModal category={popUpStyle['category']}/>
         </div>
     </Aux>);
 };

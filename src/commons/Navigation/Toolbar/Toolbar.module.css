@@ -27,7 +27,9 @@
     color: rgba(231, 62, 90);
     font-size: 5em;
 }
-
+.CategoryContainer {
+    z-index: 600;
+}
 @media only screen and (min-width: 1025px) {
     .Title {
         font-size: 1.5em;
