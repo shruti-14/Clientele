@@ -3,4 +3,19 @@
     width: 50%;
     padding: 32px;
     box-sizing: border-box;
+    display: flex;
+    max-height: 15em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.categoryColumn {
+    padding-right: 30px;
+}
+.categoryNames {
+    font-family: 'Heebo', sans-serif;
+    color: rgba(231, 62, 90);
+    font-size: 0.5em
+}
+.SubCategoryName:hover {
+    color: black;
 }

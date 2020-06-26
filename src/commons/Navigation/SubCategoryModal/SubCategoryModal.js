@@ -4,31 +4,28 @@ import categoryList from './SubCategoryList';
 
 const SubCategoryModal = (props) => {
 
-    // const getListItems = (e) => {
-    //     if (e.items) {
-    //         e.items.map(item => {
-    //             return <li key={item}>{item}</li>
-    //         })
-    //     }
-    // }
+    const getListItems = (e) => {
+        debugger;
+        if (e.items) {
+            return e.items.map(item => {
+                return <li key={item} className={classes.SubCategoryName}>{item}</li>
+            })
+        }
+    }
 
-    // const categoryListContent = () => {
-    //     if (categoryList[props.category])
-    //         categoryList[props.category].map(e => {
-    //             return <div key={e.label}><p>{e.label}</p>
-    //                 {
-    //                     getListItems(e)
-    //                     // e.items.map(item => {
-    //                     //     return <li key={item}>{item}</li>
-    //                     // })
-    //                 }
-    //             </div>
-    //         });
-    //     return null;
-    // }
-    return <div className={classes.container}>
-        {/* {categoryListContent} */}
-        {props.category}
+    const categoryListContent = categoryList[props.category] ?
+        categoryList[props.category].map(e => {
+            const listItems = getListItems(e);
+            debugger;
+            return <div key={e.label} className={classes.categoryColumn}><p className={classes.categoryNames}>{e.label}</p>
+                {
+                    listItems
+                }
+            </div>
+        }) : null;
+
+    return <div className={classes.container} onMouseLeave={() => props.mouseLeft()}>
+        {categoryListContent}
     </div>;
 }
 

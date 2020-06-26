@@ -20,7 +20,7 @@ const navigationItems = (props) => {
         }
     ];
     const navLinksEle = navLinks.map(e => {
-        return <li key={e.key} style={{ cursor: 'pointer' }} onMouseOver={(event) => { event.stopPropagation(); props.mouseHovered(e.key) }} onMouseLeave={() => props.mouseLeft()}>{e.label}</li>
+        return <li key={e.key} style={{ cursor: 'pointer' }} onMouseOver={(event) => { event.stopPropagation(); props.mouseHovered(e.key) }}>{e.label}</li>
     });
 
     return <ul className={classes.navContainer}>

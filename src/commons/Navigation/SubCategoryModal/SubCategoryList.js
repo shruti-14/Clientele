@@ -23,7 +23,15 @@ const categoryList = {
             ]
         },
         {
-            "label": "Watches"
+            "label": "Watches",
+            "items": [
+                "New Arrivals",
+                "Fastrack",
+                "Daniel Wellington",
+                "Rado",
+                "Fossil",
+                "Others"
+            ]
         },
 
         {
@@ -47,7 +55,14 @@ const categoryList = {
             ]
         },
         {
-            "label": "Shoes"
+            "label": "Shoes",
+            "items": [
+                "Puma",
+                "Adidas",
+                "Nike",
+                "Wildcraft",
+                "Others"
+            ]
         },
         {
             "label": "Sportswear",
@@ -61,13 +76,35 @@ const categoryList = {
         }
     ],
     "electronics": [{
-        "label": "Mobile"
+        "label": "Mobile",
+        "items": [
+            "Latest",
+            "Best Sellers",
+            "One Plus",
+            "Vivo",
+            "Redmi",
+            "Samsung"
+        ]
     },
     {
-        "label": "TV"
+        "label": "TV",
+        "items": [
+            "Best Sellers",
+            "Samsung",
+            "Sony",
+            "Hitachi",
+            "Others"
+        ]
     },
     {
-        "label": "Speakers & Headphones"
+        "label": "Speakers & Headphones",
+        "items": [
+            "JBL",
+            "Bose",
+            "Boat",
+            "Sony",
+            "Others"
+        ]
     },
     {
         "label": "Other Essentials",

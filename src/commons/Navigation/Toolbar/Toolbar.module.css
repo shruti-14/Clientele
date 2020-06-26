@@ -28,7 +28,9 @@
     font-size: 5em;
 }
 .CategoryContainer {
-    z-index: 600;
+    z-index: 700;
+    max-height: 15em;
+    overflow: hidden;
 }
 @media only screen and (min-width: 1025px) {
     .Title {

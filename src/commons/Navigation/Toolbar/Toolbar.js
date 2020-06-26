@@ -30,29 +30,29 @@ const Toolbar = (props) => {
         setPopUpStyle(style)
     }
     const removeStyles = () => {
-        setPopUpStyle({
-            position: 'relative',
-            left: 0,
-            top: 0,
-            display: 'none',
-            showBackDrop: false
-        });
+        // setPopUpStyle({
+        //     position: 'relative',
+        //     left: 0,
+        //     top: 0,
+        //     display: 'none',
+        //     showBackDrop: false
+        // });
         console.log('removing--->', popUpStyle);
     }
     return (<Aux>
-        <BackDrop show={popUpStyle['showBackDrop']} clicked={() => console.log('Hi')} />
-        <header className={classes.Toolbar}>
+        <BackDrop show={popUpStyle['showBackDrop']} clicked={() => removeStyles()} />
+        <header className={classes.Toolbar} onMouseLeave={() => removeStyles()}>
             <DrawerToggle clicked={props.drawerToggleClicked} />
             <div className={classes.LeftOptionContainer}>
                 <p className={classes.Title}>
                     Clientele
              </p>
-                <div className={classes.mainNavLinks} ref={navLinksRef} > <NavigationItems mouseHovered={(key) => getStyles(key)} mouseLeft={() => removeStyles()} /> </div>
+                <div className={classes.mainNavLinks} ref={navLinksRef} > <NavigationItems mouseHovered={(key) => getStyles(key)} /> </div>
             </div>
             <IconNavigationItems />
         </header>
         <div className={classes.CategoryContainer} style={popUpStyle}>
-            <SubCategoryModal category={popUpStyle['category']}/>
+            <SubCategoryModal category={popUpStyle['category']} mouseLeft={() => removeStyles()} />
         </div>
     </Aux>);
 };
