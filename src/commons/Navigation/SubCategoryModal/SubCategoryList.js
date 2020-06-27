@@ -3,13 +3,13 @@ const categoryList = {
         {
             "label": "Mens",
             "items": [
-                "Jeans", "Shirts", "Formals", "T-shirts", "Shorts", "Trousers", "Ethnic", "Footwears"
+                "Jeans", "Shirts", "Formals", "T-shirts", "Shorts", "Trousers", "Ethnic", "Footwears", "More..."
             ]
         },
         {
             "label": "Womens",
             "items": [
-                "Tops", "Jeans", "Formals", "Shorts & Skirts", "Kurta", "Ethnic", "Footwears"
+                "Tops", "Jeans", "Formals", "Shorts & Skirts", "Kurta", "Ethnic", "Footwears", "More..."
             ]
         },
         {
@@ -19,7 +19,8 @@ const categoryList = {
                 "Briefs & Trunks",
                 "Boxers",
                 "Sleepwear",
-                "Thermals"
+                "Thermals",
+                "More..."
             ]
         },
         {
@@ -30,7 +31,7 @@ const categoryList = {
                 "Daniel Wellington",
                 "Rado",
                 "Fossil",
-                "Others"
+                "More..."
             ]
         },
 
@@ -40,7 +41,8 @@ const categoryList = {
                 "Belts",
                 "Earrings",
                 "Sunglasses",
-                "Skincares"
+                "Skincares",
+                "More..."
             ]
         }
     ],
@@ -51,17 +53,18 @@ const categoryList = {
                 "Yoga Mat",
                 "Dumbells",
                 "Skipping rope",
-                "Gym Accessories"
+                "Gym Accessories",
+                "More..."
             ]
         },
         {
-            "label": "Shoes",
+            "label": "Sport Shoes",
             "items": [
                 "Puma",
                 "Adidas",
                 "Nike",
                 "Wildcraft",
-                "Others"
+                "More..."
             ]
         },
         {
@@ -71,7 +74,19 @@ const categoryList = {
                 "Tops",
                 "Jeggings",
                 "Sports Bra",
-                "Swimwear"
+                "Swimwear",
+                "More..."
+            ]
+        },
+        {
+            "label": "Games",
+            "items": [
+                "Latest Arrivals",
+                "Outdoor",
+                "Indoor",
+                "Techie",
+                "Kids",
+                "More..."
             ]
         }
     ],
@@ -83,7 +98,8 @@ const categoryList = {
             "One Plus",
             "Vivo",
             "Redmi",
-            "Samsung"
+            "Samsung",
+            "More..."
         ]
     },
     {
@@ -93,7 +109,7 @@ const categoryList = {
             "Samsung",
             "Sony",
             "Hitachi",
-            "Others"
+            "More..."
         ]
     },
     {
@@ -103,7 +119,7 @@ const categoryList = {
             "Bose",
             "Boat",
             "Sony",
-            "Others"
+            "More..."
         ]
     },
     {
@@ -112,24 +128,52 @@ const categoryList = {
             "Refrigerator",
             "Washing Machine",
             "Air Conditioner",
-            "Others"
+            "More..."
         ]
     }
     ],
     "home": [{
-        "label": "Furniture"
+        "label": "Furniture",
+        "items": [
+            "Table",
+            "Chair",
+            "Closet",
+            "Storage Units",
+            "More..."
+        ]
     },
     {
-        "label": "Curtains"
+        "label": "Curtains & Pillows",
+        "items": [
+            "Latest Arrivals",
+            "Monotone",
+            "Florals",
+            "Abstract",
+            "Dark theme",
+            "More..."
+        ]
     },
     {
-        "label": "Pillows"
+        "label": "Wall decor",
+        "items": [
+            "Wall Hangings",
+            "Photo frames",
+            "Stickers",
+            "Clocks",
+            "Key holders",
+            "More..."
+        ]
     },
     {
-        "label": "Wall decor"
-    },
-    {
-        "label": "Kitchen Gadgets"
+        "label": "Kitchen Gadgets",
+        "items": [
+            "Wall Hangings",
+            "Photo frames",
+            "Stickers",
+            "Clocks",
+            "Key holders",
+            "More..."
+        ]
     }]
 };
 export default categoryList;

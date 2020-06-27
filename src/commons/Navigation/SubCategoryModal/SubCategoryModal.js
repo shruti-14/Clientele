@@ -5,7 +5,6 @@ import categoryList from './SubCategoryList';
 const SubCategoryModal = (props) => {
 
     const getListItems = (e) => {
-        debugger;
         if (e.items) {
             return e.items.map(item => {
                 return <li key={item} className={classes.SubCategoryName}>{item}</li>
@@ -16,7 +15,6 @@ const SubCategoryModal = (props) => {
     const categoryListContent = categoryList[props.category] ?
         categoryList[props.category].map(e => {
             const listItems = getListItems(e);
-            debugger;
             return <div key={e.label} className={classes.categoryColumn}><p className={classes.categoryNames}>{e.label}</p>
                 {
                     listItems

@@ -22,7 +22,8 @@ const Toolbar = (props) => {
         if (navLinksRef.current) {
             const elePosition = navLinksRef.current.getBoundingClientRect();
             style['left'] = (elePosition['left'] + 50) + 'px';
-            style['top'] = (elePosition['top'] + 71.5) + 'px';
+            debugger;
+            style['top'] = (elePosition['top'] + (elePosition['height'] + 5)) + 'px';
             style['display'] = 'block';
             style['showBackDrop'] = true;
             style['category'] = key;
@@ -30,18 +31,17 @@ const Toolbar = (props) => {
         setPopUpStyle(style)
     }
     const removeStyles = () => {
-        // setPopUpStyle({
-        //     position: 'relative',
-        //     left: 0,
-        //     top: 0,
-        //     display: 'none',
-        //     showBackDrop: false
-        // });
-        console.log('removing--->', popUpStyle);
+        setPopUpStyle({
+            position: 'relative',
+            left: 0,
+            top: 0,
+            display: 'none',
+            showBackDrop: false
+        });
     }
     return (<Aux>
         <BackDrop show={popUpStyle['showBackDrop']} clicked={() => removeStyles()} />
-        <header className={classes.Toolbar} onMouseLeave={() => removeStyles()}>
+        <header className={classes.Toolbar}>
             <DrawerToggle clicked={props.drawerToggleClicked} />
             <div className={classes.LeftOptionContainer}>
                 <p className={classes.Title}>

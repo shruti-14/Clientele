@@ -4,15 +4,15 @@
     justify-content: space-between;
     width: 30vw;
 }
-li {
+.navItem {
     cursor: pointer;
     list-style:none;
     font-family: 'Heebo', sans-serif;
     color: gray;
-    font-size: 0.5em;
+    font-size: 0.6em;
     
 }
-li:hover {
+.navItem:hover {
     color: rgba(231, 62, 90);
 }
 @media only screen and (max-width: 1024px){
@@ -21,7 +21,7 @@ li:hover {
         width: 100%;
         align-items: center;
     }
-    li {
+    .navItem {
         font-size: 3em;
         padding-bottom: 8px;
         color: gray;
