@@ -10,7 +10,7 @@ import SubCategoryModal from '../SubCategoryModal/SubCategoryModal';
 const Toolbar = (props) => {
     const navLinksRef = useRef(null);
     const [popUpStyle, setPopUpStyle] = useState({
-        position: 'relative',
+        position: 'absolute',
         left: 0,
         top: 0,
         display: 'none',
@@ -32,7 +32,7 @@ const Toolbar = (props) => {
     }
     const removeStyles = () => {
         setPopUpStyle({
-            position: 'relative',
+            position: 'absolute',
             left: 0,
             top: 0,
             display: 'none',

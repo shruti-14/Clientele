@@ -3,6 +3,7 @@ import Aux from '../../../hoc/Aux/Aux';
 import Backdrop from '../../UI/Backdrop/Backdrop';
 import classes from './SideDrawer.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
+import SubCategoryAccordion from '../../SubCategoryAccordion/SubCategoryAccordion';
 
 const sideDrawer = (props) => {
 
@@ -17,7 +18,8 @@ const sideDrawer = (props) => {
                     <i className={`fa ${classes.faTimesThin}`} onClick={props.closed}></i>
                 </div>
                 <div className={classes.mainNavLinks}>
-                    <NavigationItems />
+                    {/* <NavigationItems /> */}
+                    <SubCategoryAccordion />
                 </div>
             </div>
         </Aux>

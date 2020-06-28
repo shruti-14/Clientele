@@ -15,7 +15,6 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.15);
     overflow: hidden;
     background-color: white;
-    /* min-height: 75px; */
 }
 .LeftOptionContainer {
     display: inline-flex;
@@ -30,6 +29,7 @@
 }
 .CategoryContainer {
     z-index: 700;
+    width: 50%;
 }
 @media only screen and (min-width: 1025px) {
     .Title {
