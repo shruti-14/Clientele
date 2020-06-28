@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './IconNavigationItems.module.css';
-import Aux from '../../../hoc/Aux/Aux';
+import Aux from '../../../hoc/Auxillary/Auxillary';
 
 const iconNavigationItems = (props) => (
     <Aux>

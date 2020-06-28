@@ -3,9 +3,10 @@ import classes from './Toolbar.module.css';
 import DrawerToggle from '../SideDrawer/DrawerToggle/DrawerToggle';
 import IconNavigationItems from '../IconNavigationItems/IconNavigationItems';
 import NavigationItems from '../NavigationItems/NavigationItems';
-import Aux from '../../../hoc/Aux/Aux';
+import Aux from '../../../hoc/Auxillary/Auxillary';
 import BackDrop from '../../UI/Backdrop/Backdrop';
 import SubCategoryModal from '../SubCategoryModal/SubCategoryModal';
+import { Link } from 'react-router-dom';
 
 const Toolbar = (props) => {
     const navLinksRef = useRef(null);
@@ -44,9 +45,9 @@ const Toolbar = (props) => {
         <header className={classes.Toolbar}>
             <DrawerToggle clicked={props.drawerToggleClicked} />
             <div className={classes.LeftOptionContainer}>
-                <p className={classes.Title}>
+                <Link to="/" style={{ 'text-decoration': 'none' }}> <p className={classes.Title}>
                     Clientele
-             </p>
+             </p></Link>
                 <div className={classes.mainNavLinks} ref={navLinksRef} > <NavigationItems mouseHovered={(key) => getStyles(key)} /> </div>
             </div>
             <IconNavigationItems />
