@@ -1,0 +1,23 @@
+* {
+    font-size: 2vw;
+}
+.DrawerToggle {
+    width: 6vw;
+    height: 5.5vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.hamburgerIcon {
+    color: darkgrey;
+    font-size: 3em;
+}
+@media only screen and (min-width: 1025px) {
+    .DrawerToggle {
+        display: none;
+    }
+}
