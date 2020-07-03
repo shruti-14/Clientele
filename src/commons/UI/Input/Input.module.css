@@ -12,18 +12,20 @@
 
 .InputElement {
     outline: none;
-    border: 1px solid #ccc;
+    border: none;
+    border-bottom: 2px solid #ccc;
     background-color: white;
     font-family: 'Heebo', sans-serif;
     padding: 6px 10px;
     display: block;
     width: 100%;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 .InputElement:focus {
     outline: none;
-    background-color: #ccc;
+    border-bottom: 2px solid rgba(231, 62, 90);
 }
 
 .Invalid {

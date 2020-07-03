@@ -25,7 +25,7 @@ const Input = (props) => {
     }
     return (
         <div className={classes.Input}>
-            <label className={classes.Label}>{'shruti'}</label>
+            {/* <label className={classes.Label}>{'shruti'}</label> */}
             {inputElement}
         </div>
     );

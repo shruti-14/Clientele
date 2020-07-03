@@ -34,10 +34,14 @@ class Login extends Component {
             }
         },
         formIsValid: false,
-        loading: false
+        loading: false,
+        loginTabActive: true
     }
     inputChangedHandler = (event, inputIdentifier) => {
         console.log('Hi');
+    }
+    loginTabClicked = () => {
+        this.setState({ loginTabActive: true });
     }
     render() {
         const formElementsArray = [];
@@ -65,7 +69,12 @@ class Login extends Component {
             </form>
         )
         return <div className={classes.LoginContainer}>
+
             <div className={classes.LoginContent}>
+                <div className={classes.tabsContainer}>
+                    <div className={classes.tabs} onClick={() => this.loginTabClicked()}>Login</div>
+                    <div className={classes.tabs}>Register</div>
+                </div>
                 {form}
             </div>
         </div>
