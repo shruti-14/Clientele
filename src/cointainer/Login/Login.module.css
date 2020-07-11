@@ -21,8 +21,20 @@
     position: relative;
 }
 .tabs {
+    cursor: pointer;
     width: 50%;
     text-align: center;
     font-family: 'Heebo', sans-serif;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    color: #808080;
+    padding: 8px;
+}
+.tabs:hover {
+    background-color: #f5f4f4;
+}
+.tabActive {
+    border-bottom: 3px solid rgba(231, 62, 90);
+}
+.form {
+    /* background-color: red; */
 }

@@ -1,0 +1,22 @@
+.AuthContainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: 	#faeaef;
+}
+.Container {
+    display: flex;
+    height: 50%;
+}
+.InnerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textConatiner {
+    background-color: rgba(231, 62, 90);
+}
+.formConatiner {
+    background-color: 	#F8F8F8;
+}

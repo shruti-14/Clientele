@@ -3,13 +3,13 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import WhoAreYou from './components/Who-are-you/Who-are-you';
 import ShopLayout from './hoc/ShopLayout/ShopLayout';
-import Login from '../src/cointainer/Login/Login';
+import Auth from './cointainer/Auth/Auth';
 
 const App = () => (
   <Switch className="comp">
     <Route path="/" exact component={WhoAreYou} />
     <Route path="/shop" component={ShopLayout} />
-    <Route path="/login" component={Login} />
+    <Route path="/auth" component={Auth} />
   </Switch>
 );
 

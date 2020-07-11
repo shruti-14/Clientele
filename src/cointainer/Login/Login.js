@@ -43,6 +43,9 @@ class Login extends Component {
     loginTabClicked = () => {
         this.setState({ loginTabActive: true });
     }
+    registerTabClicked = () => {
+        this.setState({ loginTabActive: false });
+    }
     render() {
         const formElementsArray = [];
         for (let key in this.state.loginForm) {
@@ -52,7 +55,7 @@ class Login extends Component {
             });
         }
         let form = (
-            <form>
+            <form className={classes.form}>
                 {formElementsArray.map(formElement => (
                     <Input
                         key={formElement.id}
@@ -63,6 +66,7 @@ class Login extends Component {
                         shouldValidate={formElement.config.validation}
                         touched={formElement.config.touched}
                         changed={(event) => this.inputChangedHandler(event, formElement.id)}
+                        
                     />
                 ))}
                 {/* <button to="/" className={classes.loginButton}>Login</button> */}
@@ -71,10 +75,7 @@ class Login extends Component {
         return <div className={classes.LoginContainer}>
 
             <div className={classes.LoginContent}>
-                <div className={classes.tabsContainer}>
-                    <div className={classes.tabs} onClick={() => this.loginTabClicked()}>Login</div>
-                    <div className={classes.tabs}>Register</div>
-                </div>
+                <div>description</div>
                 {form}
             </div>
         </div>
