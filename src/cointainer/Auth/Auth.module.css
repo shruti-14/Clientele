@@ -13,10 +13,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 32px;
 }
 .textConatiner {
     background-color: rgba(231, 62, 90);
+    width: 30%
+}
+.TextContainerHeading {
+    color: white;
+    font-family: 'Heebo', sans-serif;
 }
 .formConatiner {
     background-color: 	#F8F8F8;
+    width: 70%;
 }

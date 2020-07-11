@@ -72,13 +72,14 @@ class Login extends Component {
                 {/* <button to="/" className={classes.loginButton}>Login</button> */}
             </form>
         )
-        return <div className={classes.LoginContainer}>
+        // return <div className={classes.LoginContainer}>
 
-            <div className={classes.LoginContent}>
-                <div>description</div>
-                {form}
-            </div>
-        </div>
+        //     <div className={classes.LoginContent}>
+        //         <div>description</div>
+        //         {form}
+        //     </div>
+        // </div>
+        return <h1>Login</h1>
     }
 }
 export default Login;
