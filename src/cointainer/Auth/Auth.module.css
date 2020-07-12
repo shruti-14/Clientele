@@ -4,10 +4,13 @@
     justify-content: center;
     align-items: center;
     background-color: 	#faeaef;
+    
 }
 .Container {
     display: flex;
-    height: 50%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 .InnerContainer {
     display: flex;
@@ -17,13 +20,41 @@
 }
 .textConatiner {
     background-color: rgba(231, 62, 90);
-    width: 30%
+    min-width: 45%;
 }
 .TextContainerHeading {
-    color: white;
+    color: #F5F5F5;
     font-family: 'Heebo', sans-serif;
+    text-align: center;
+    
+}
+.TextContainerContent {
+    color: #F5F5F5;
+    /* font-family: 'Heebo', sans-serif; */
+    padding: 16px 16px 24px 16px;
+    text-align: center;
+    font-size: 0.9em;
 }
 .formConatiner {
     background-color: 	#F8F8F8;
-    width: 70%;
+    width: 55%;
+}
+.Button {
+    background-color: transparent;
+    border: 1px solid #F8F8F8;
+    color: #F8F8F8;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 19px;
+    align-self: center;
+}
+.Button:hover {
+    color: rgba(231, 62, 90);
+    background-color: #F8F8F8;
 }

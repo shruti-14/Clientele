@@ -8,11 +8,11 @@ const Auth = ({ match }) => {
     return <div className={classes.AuthContainer}>
         <div className={classes.Container}>
             <div className={`${classes.InnerContainer} ${classes.textConatiner}`}>
-                <h5 className={classes.TextContainerHeading}>{`${isLoginActive ? 'New to Clientele?'
+                <h1 className={classes.TextContainerHeading}>{`${isLoginActive ? 'Hello Friend!'
                     :
-                    'Welcome back!'}`}</h5>
-                <p>Enter your personal details and start shopping with us</p>
-                {/* <button>Sign Up</button> */}
+                    'Welcome back!'}`}</h1>
+                <p className={classes.TextContainerContent}>Register yourself and start shopping with us.</p>
+                <button className={classes.Button}>Sign Up</button>
             </div>
             <div className={`${classes.InnerContainer} ${classes.formConatiner}`}>
                 <Switch>
