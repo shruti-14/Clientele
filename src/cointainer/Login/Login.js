@@ -66,20 +66,23 @@ class Login extends Component {
                         shouldValidate={formElement.config.validation}
                         touched={formElement.config.touched}
                         changed={(event) => this.inputChangedHandler(event, formElement.id)}
-                        
+
                     />
                 ))}
                 {/* <button to="/" className={classes.loginButton}>Login</button> */}
             </form>
         )
-        // return <div className={classes.LoginContainer}>
-
-        //     <div className={classes.LoginContent}>
-        //         <div>description</div>
-        //         {form}
-        //     </div>
-        // </div>
-        return <h1>Login</h1>
+        return <div className={classes.LoginContainer}>
+            <div className={classes.HeaderSection}>
+                <h2>Sign in to clientele</h2>
+                {/* <div>
+                    <i className="fa">&#xf002;</i>
+                    <i className="fa">&#xf002;</i>
+                </div> */}
+            </div>
+            {form}
+        </div>
+        // return <h1>Login</h1>
     }
 }
 export default Login;

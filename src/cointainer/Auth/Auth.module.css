@@ -24,16 +24,16 @@
 }
 .TextContainerHeading {
     color: #F5F5F5;
-    font-family: 'Heebo', sans-serif;
     text-align: center;
     
 }
 .TextContainerContent {
     color: #F5F5F5;
-    /* font-family: 'Heebo', sans-serif; */
+    font-family: 'Heebo', sans-serif;
     padding: 16px 16px 24px 16px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 0.55em;
+    opacity: 0.6;
 }
 .formConatiner {
     background-color: 	#F8F8F8;
