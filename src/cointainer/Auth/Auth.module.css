@@ -19,8 +19,10 @@
     padding: 32px;
 }
 .textConatiner {
-    background-color: rgba(231, 62, 90);
+    /* background-color: rgba(231, 62, 90); */
+    background-image: url('../../assets/auth-background.jpg');
     min-width: 45%;
+    background-repeat: round;
 }
 .TextContainerHeading {
     color: #F5F5F5;
