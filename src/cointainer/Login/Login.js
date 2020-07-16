@@ -74,10 +74,10 @@ class Login extends Component {
         )
         return <div className={classes.LoginContainer}>
             <div className={classes.HeaderSection}>
-                <h2>Sign in to clientele</h2>
-                {/* <div>
-                    <i className="fa">&#xf002;</i>
-                    <i className="fa">&#xf002;</i>
+                <h1 className={classes.signInTitle}>Sign in to Clientele</h1>
+                {/* <div className={classes.socialIconsContainer}>
+                    <i className={`fa ${classes.socialIcon}`}>&#xf002;</i>
+                    <i className={`fa ${classes.socialIcon}`}>&#xf002;</i>
                 </div> */}
             </div>
             {form}
