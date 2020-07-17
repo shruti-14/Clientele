@@ -17,13 +17,76 @@
 }
 
 .socialIcon {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
+    padding: 8px;
+    font-size: 0.8em;
+    width: 1em;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 8px;
     border-radius: 50%;
-    background: #3B5998;
-  color: white;
+    background: 	#F0F0F0;
+    border: 1px solid #E0E0E0;
+    color: #686868;
+    cursor: pointer;
+}
+.gmailIcon:hover {
+    background-color: #dd4b39;
+    color: white;
+    border: 1px solid #dd4b39;
+}
+.facebookIcon:hover {
+    background-color: #3B5998;
+    color: white;
+    border: 1px solid #3B5998;
+}
+.orContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.orContainer p {
+    color: #686868;
+    padding: 0px 16px;
+}
+.divider {
+    width: 100%;
+    height: 1.5px;
+    background-color: #E0E0E0;
+    justify-content: center;
+    align-self: center;
+    margin-top: 8px;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.forgetPassword {
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.5em;
+    color: #686868;
+    align-self: center;
+    cursor: pointer;
+    padding: 8px 0px 16px 0px;
+}
+.forgetPassword:hover {
+    color: rgba(231, 62, 90);    
+}
+.signInButton {
+    align-self: center;
+    background-color: rgba(231, 62, 90);
+    border: 1px solid rgba(231, 62, 90);
+    color: #F8F8F8;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 24px;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 19px;
+}
+.signInButton:hover {
+    background-color: transparent;
+    color: #686868;
 }
