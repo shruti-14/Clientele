@@ -37,7 +37,16 @@ class Login extends Component {
         loading: false
     }
     inputChangedHandler = (event, inputIdentifier) => {
-        console.log('Hi');
+        const updatedLoginForm = {
+            ...this.state.loginForm
+        };
+        const updatedFormElement = {
+            ...updatedLoginForm[inputIdentifier]
+        };
+        updatedFormElement.value = event.target.value;
+        updatedLoginForm[inputIdentifier] = updatedFormElement;
+
+        this.setState({ loginForm: updatedLoginForm });
     }
     render() {
         const formElementsArray = [];
