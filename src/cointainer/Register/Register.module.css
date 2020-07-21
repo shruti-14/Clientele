@@ -1,4 +1,4 @@
-.LoginContainer {
+.registerContainer {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -7,8 +7,9 @@
 }
 .signInTitle {
     color: rgba(231, 62, 90);
+    /* font-family: 'Work Sans', sans-serif; */
     font-family: 'PT Serif', serif;
-    font-size: 1.8em
+    font-size: 1.5em
 }
 .socialIconsContainer {
     display: flex;
@@ -41,7 +42,7 @@
 }
 .orContainer {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-around;
 }
 .orContainer p {
@@ -60,42 +61,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 55%;
 }
 .forgetPassword {
     font-family: 'Heebo', sans-serif;
     font-size: 0.5em;
     color: #686868;
-    align-self: flex-end;
+    align-self: center;
     cursor: pointer;
+    padding: 8px 0px 16px 0px;
 }
 .forgetPassword:hover {
     color: rgba(231, 62, 90);    
-}
-.noAccount {
-    font-family: 'Heebo', sans-serif;
-    font-size: 0.5em;
-    color: #686868;
-    align-self: center
-}
-.noAccount span  {
-    font-family: 'Heebo', sans-serif;
-    font-size: 1em;
-    color: rgba(231, 62, 90); 
-    cursor: pointer;
 }
 .signInButton {
     align-self: center;
     background-color: rgba(231, 62, 90);
     border: 1px solid rgba(231, 62, 90);
     color: #F8F8F8;
-    padding: 8px 32px;
+    padding: 8px;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     margin-top: 24px;
-    margin-bottom: 6px;
     cursor: pointer;
+    width: 50%;
     border-radius: 19px;
 }
 .signInButton:hover {

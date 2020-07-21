@@ -3,13 +3,14 @@ import classes from './Login.module.css';
 import Input from '../../commons/UI/Input/Input';
 
 class Login extends Component {
+    
     state = {
         loginForm: {
             userName: {
                 elementType: 'input',
                 elementConfig: {
                     type: 'text',
-                    placeholder: 'Username'
+                    placeholder: 'Email or Mobile'
                 },
                 value: '',
                 validation: {
@@ -48,6 +49,9 @@ class Login extends Component {
 
         this.setState({ loginForm: updatedLoginForm });
     }
+    openRegisterForm = () => {
+        this.props.history.push("/auth/register");
+    }
     render() {
         const formElementsArray = [];
         for (let key in this.state.loginForm) {
@@ -72,15 +76,16 @@ class Login extends Component {
 
                         />
                     ))}
-                    {/* <button to="/" className={classes.loginButton}>Login</button> */}
                 </form>
+
                 <p className={classes.forgetPassword}>Forgot your password?</p>
                 <button className={classes.signInButton}>Sign in</button>
+                <p className={classes.noAccount}>Don't have an account? <span className={classes.signUpLink} onClick={()=>this.openRegisterForm()}>Create new Account</span></p>
             </div>
         )
         return <div className={classes.LoginContainer}>
             <div className={classes.HeaderSection}>
-                <h1 className={classes.signInTitle}>Sign in to Clientele</h1>
+                <h1 className={classes.signInTitle}>Continue shopping ...</h1>
                 <div className={classes.socialIconsContainer}>
                     <i className={`fa ${classes.socialIcon} ${classes.gmailIcon}`}>&#xf0d5;</i>
                     <i className={`fa ${classes.socialIcon} ${classes.facebookIcon}`}>&#xf09a;</i>
@@ -94,7 +99,6 @@ class Login extends Component {
             </div>
             {form}
         </div>
-        // return <h1>Login</h1>
     }
 }
 export default Login;

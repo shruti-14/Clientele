@@ -7,22 +7,20 @@ import Register from '../Register/Register';
 const Auth = ({ match }) => {
     const [isLoginActive, setLoginActive] = useState(true);
     useEffect(() => {
-        // Update the document title using the browser API
-        // document.title = `You clicked ${count} times`;
-        console.log(document.location.pathname);
-        if (document.location.pathname === '/auth/register') {
-            setLoginActive(false);
-            console.log(isLoginActive);
-        }
+        document.location.pathname === '/auth/register' ? setLoginActive(false) : setLoginActive(true)
     });
     return <div className={classes.AuthContainer}>
         <div className={classes.Container}>
             <div className={`${classes.InnerContainer} ${classes.textConatiner}`}>
-                <h1 className={classes.TextContainerHeading}>{`${isLoginActive ? 'Hello Friend!'
+                {/* <h1 className={classes.TextContainerHeading}>{`${isLoginActive ? 'Hello Friend!'
                     :
                     'Welcome back!'}`}</h1>
-                <p className={classes.TextContainerContent}>Register yourself and start shopping with us.</p>
-                <Link to={`${match.path}/register`} className={classes.Button}>Sign Up</Link>
+                <p className={classes.TextContainerContent}>{`${isLoginActive ? 'Register yourself and start shopping with us.'
+                    :
+                    'To continue shopping with us please login.'}`}</p>
+                <Link to={`${isLoginActive ? `${match.path}/register` : `${match.path}/login`}`} className={classes.Button} >{`${isLoginActive ? 'Sign Up'
+                    :
+                    'Sign in'}`}</Link> */}
             </div>
             <div className={`${classes.InnerContainer} ${classes.formConatiner}`}>
                 <Switch>

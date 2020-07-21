@@ -15,7 +15,7 @@ const Input = (props) => {
                 {...props.elementConfig}
                 value={props.value}
                 onChange={props.changed}
-            />
+            />            
         default:
             inputElement = <input
                 className={inputClasses.join(' ')}
@@ -25,7 +25,6 @@ const Input = (props) => {
     }
     return (
         <div className={classes.Input}>
-            {/* <label className={classes.Label}>{'shruti'}</label> */}
             {inputElement}
         </div>
     );
